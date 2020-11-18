@@ -21,7 +21,14 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "prettier"
+        "prettier",
+        "babel-plugin-transform-typescript-metadata" ,
+        [ "@ babel / plugin-proposal-decorators" ,  {  "legacy" : true  } ] ,
+        [ "@ babel / plugin-proposal-class- propriedades " ,  {  " loose " : true  } ] ,
+  ] ,
+  " presets " : [
+    " @ babel / preset-typescript "
+  ]
     ],
     "rules": {
       "prettier/prettier": "error",
