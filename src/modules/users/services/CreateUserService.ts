@@ -41,7 +41,6 @@ class CreateUserService {
     });
 
     await this.cacheProvider.invalidatePrefix('providers-list');
-    console.log('delete providers-list');
 
     return user;
   }
